@@ -1,8 +1,8 @@
-def contagem():
+def contar():
     numero = int(input('Digite um numero: '))
     contador = 0
     while contador <= numero:
         print(contador)
         contador += 1
 
-print(contagem())
+contar()
