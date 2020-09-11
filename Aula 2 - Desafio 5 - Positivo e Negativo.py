@@ -1,9 +1,9 @@
 def retornar_verificacao_numero(x):
     if x > 0:
-        print('POSITIVO')
+        return('POSITIVO')
     elif x < 0:
-        print('NEGATIVO')
+        return('NEGATIVO')
     else:
-        print('NEUTRO')
+        return('NEUTRO')
 
 print(retornar_verificacao_numero(-10))
