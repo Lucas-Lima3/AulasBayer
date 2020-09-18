@@ -185,3 +185,58 @@ def bhaskara():
 print(bhaskara())
 
 print()
+
+
+
+"""
+Cubo Mágico
+    conforme a lista abaixo, organize a mesma em suas listas respectivas, por exemplo, todas as cores verdes em uma lista chamada verde.
+    cores = ['amarelo', 'branca', 'laranja', 'amarelo', 'branca', 'azul', 
+         'azul', 'laranja', 'vermelha', 'amarelo', 'amarelo', 'azul',
+         'verde', 'verde', 'laranja', 'laranja', 'laranja', 'branca',
+         'amarelo', 'branca', 'branca', 'verde', 'laranja', 'amarelo',
+         'verde', 'amarelo', 'verde', 'laranja', 'amarelo', 'branca',
+         'amarelo', 'vermelha', 'vermelha', 'vermelha', 'laranja', 'laranja',
+         'branca', 'branca', 'branca', 'verde', 'verde', 'verde', 'verde',
+         'vermelha', 'azul', 'vermelha', 'azul', 'azul', 'vermelha',
+         'vermelha', 'azul','vermelha', 'azul', 'azul']
+"""
+print('EXERCÍCIO 8')
+
+cores = ['amarelo', 'branca', 'laranja', 'amarelo', 'branca', 'azul',
+         'azul', 'laranja', 'vermelha', 'amarelo', 'amarelo', 'azul',
+         'verde', 'verde', 'laranja', 'laranja', 'laranja', 'branca',
+         'amarelo', 'branca', 'branca', 'verde', 'laranja', 'amarelo',
+         'verde', 'amarelo', 'verde', 'laranja', 'amarelo', 'branca',
+         'amarelo', 'vermelha', 'vermelha', 'vermelha', 'laranja', 'laranja',
+         'branca', 'branca', 'branca', 'verde', 'verde', 'verde', 'verde',
+         'vermelha', 'azul', 'vermelha', 'azul', 'azul', 'vermelha',
+         'vermelha', 'azul', 'vermelha', 'azul', 'azul']
+
+amarelo = []
+branca = []
+laranja = []
+azul = []
+verde = []
+vermelha = []
+
+for cor in cores:
+    if cor == 'amarelo':
+        amarelo.append(cor)
+    elif cor == 'branca':
+        branca.append(cor)
+    elif cor == 'laranja':
+        laranja.append(cor)
+    elif cor == 'azul':
+        azul.append(cor)
+    elif cor == 'verde':
+        verde.append(cor)
+    else:
+        vermelha.append(cor)
+
+print(amarelo)
+print(branca)
+print(laranja)
+print(azul)
+print(verde)
+print(vermelha)
