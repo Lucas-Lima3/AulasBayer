@@ -84,3 +84,27 @@ else:
 
 print()
 
+
+
+"""
+Piscina
+    Calcule a quantidade de litros de uma piscina:
+        Crie um programa que utilize as 3 dimensões de uma piscina para calcular quantos litros de água ela comporta em litros. 
+        Imprima apenas o resultado no console. Utilize uma função pare resolver esse exercício.
+        Dica: 1m³ = 1000 litros
+"""
+print('EXERCÍCIO 4')
+
+def quantidade_litros():
+    altura = float(input('Qual a altura da piscina em metros: '))
+    largura = float(input('Qual a largura da piscina em metros: '))
+    comprimento = float(input('Qual o comprimento da piscina em metros: '))
+
+    metros_cubicos = altura * largura * comprimento
+    litros = metros_cubicos * 1000
+
+    return litros
+
+print(quantidade_litros())
+
+print()
