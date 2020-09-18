@@ -220,7 +220,7 @@ azul = []
 verde = []
 vermelha = []
 
-for cor in cores:
+
     if cor == 'amarelo':
         amarelo.append(cor)
     elif cor == 'branca':
@@ -238,5 +238,6 @@ print(amarelo)
 print(branca)
 print(laranja)
 print(azul)
+
 print(verde)
 print(vermelha)
