@@ -156,3 +156,32 @@ def area_circulo():
 print(area_circulo())
 
 print()
+
+
+
+"""
+Fórmula de Bhaskara
+    Leia 3 valores floats e efetue o cálculo das raízes da equação de Bhaskara. Se não for possível calcular as raízes, 
+    mostre a mensagem correspondente “Impossivel calcular”, caso haja uma divisão por 0 ou raiz de numero negativo.
+"""
+
+print('EXERCÍCIO 7')
+
+def bhaskara():
+    a = float(input('digite o valor de a: '))
+    b = float(input('digite o valor de b: '))
+    c = float(input('digite o valor de c: '))
+
+    delta = (b**2) -4 * a * c
+
+    if delta < 0:
+        print('Impossivel calcular')
+    else:
+        funcao_bhaskara_mais = (- b + (delta ** 0.5)) / (2 * a)
+        funcao_bhaskara_menos = (- b - (delta ** 0.5)) / (2 * a)
+
+        return funcao_bhaskara_mais, funcao_bhaskara_menos
+
+print(bhaskara())
+
+print()
