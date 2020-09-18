@@ -93,7 +93,7 @@ Piscina
         Imprima apenas o resultado no console. Utilize uma função pare resolver esse exercício.
         Dica: 1m³ = 1000 litros
 """
-print('EXERCÍCIO 4')
+print('EXERCÍCIO 5')
 
 def quantidade_litros():
     altura = float(input('Qual a altura da piscina em metros: '))
@@ -106,5 +106,29 @@ def quantidade_litros():
     return litros
 
 print(quantidade_litros())
+
+print()
+
+
+
+"""
+Salário com Bônus
+    Faça um programa que leia :
+        - o nome de um vendedor, 
+        - o seu salário fixo 
+        - e o total de vendas efetuadas por ele no mês (em dinheiro). 
+    Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês, com duas casas decimais.
+"""
+
+def salario_com_bonus():
+    nome_funcionario = input('Nome: ')
+    salario_funcionario = round(float(input('Salario: ')), 2)
+    vendas_funcionario = round(float(input('Vendas: ')), 2)
+
+    total_salario = round(salario_funcionario + (vendas_funcionario*1.15), 2)
+
+    return total_salario
+
+print(salario_com_bonus())
 
 print()
