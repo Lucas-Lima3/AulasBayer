@@ -11,9 +11,11 @@ dadospessoais = {
     'Mãe': 'Luciana'
 }
 
-for item in dadospessoais:
-    print(f'{item} : {dadospessoais[item]}')
+def iterar_dicionario():
+    for chave,valor in dadospessoais.items():
+        print(chave, valor)
 
+print(iterar_dicionario())
 print()
 
 
@@ -25,18 +27,21 @@ Retornar maior valor
 
 print('EXERCÍCIO 2')
 
-numeros = []
+def retornar_maior_valor():
+    numeros = []
 
-numero1 = float(input('Digite um número: '))
-numero2 = float(input('Digite outro número: '))
-numero3 = float(input('Digite outro número: '))
+    numero1 = float(input('Digite um número: '))
+    numero2 = float(input('Digite outro número: '))
+    numero3 = float(input('Digite outro número: '))
 
-numeros.append(numero1)
-numeros.append(numero2)
-numeros.append(numero3)
+    numeros.append(numero1)
+    numeros.append(numero2)
+    numeros.append(numero3)
 
-print(max(int(numero) for numero in numeros))
+    maior_numero = max(int(numero) for numero in numeros)
+    return maior_numero
 
+print(retornar_maior_valor())
 print()
 
 
@@ -95,7 +100,7 @@ Piscina
 """
 print('EXERCÍCIO 4')
 
-def quantidade_litros():
+def retornar_quantidade_litros():
     altura = float(input('Qual a altura da piscina em metros: '))
     largura = float(input('Qual a largura da piscina em metros: '))
     comprimento = float(input('Qual o comprimento da piscina em metros: '))
@@ -105,7 +110,7 @@ def quantidade_litros():
 
     return litros
 
-print(quantidade_litros())
+print(retornar_quantidade_litros())
 
 print()
 
@@ -122,18 +127,19 @@ Salário com Bônus
 
 print('EXERCÍCIO 5')
 
-def salario_com_bonus():
+def retornar_salario_com_bonus():
     nome_funcionario = input('Nome: ')
     salario_funcionario = round(float(input('Salario: ')), 2)
     vendas_funcionario = round(float(input('Vendas: ')), 2)
 
-    total_salario = round(salario_funcionario + (vendas_funcionario*1.15), 2)
+    total_salario = round(salario_funcionario + (vendas_funcionario*0.15), 2)
 
     return total_salario
 
-print(salario_com_bonus())
+print(round(retornar_salario_com_bonus(), 2))
 
 print()
+
 
 
 
@@ -149,7 +155,7 @@ print('EXERCÍCIO 6')
 def area_circulo():
     raio = round(float(input('Raio: ')), 2)
 
-    area = round(raio * 3.14159 * 2, 4)
+    area = round(raio ** 2 * 3.14159, 4)
 
     return area
 
@@ -167,22 +173,22 @@ Fórmula de Bhaskara
 
 print('EXERCÍCIO 7')
 
-def bhaskara():
+def calcular_bhaskara():
     a = float(input('digite o valor de a: '))
     b = float(input('digite o valor de b: '))
     c = float(input('digite o valor de c: '))
 
     delta = (b**2) -4 * a * c
 
-    if delta < 0:
-        print('Impossivel calcular')
+    if delta < 0 or a == 0:
+        return('Impossivel calcular')
     else:
         funcao_bhaskara_mais = (- b + (delta ** 0.5)) / (2 * a)
         funcao_bhaskara_menos = (- b - (delta ** 0.5)) / (2 * a)
 
         return funcao_bhaskara_mais, funcao_bhaskara_menos
 
-print(bhaskara())
+print(calcular_bhaskara())
 
 print()
 
@@ -213,31 +219,18 @@ cores = ['amarelo', 'branca', 'laranja', 'amarelo', 'branca', 'azul',
          'vermelha', 'azul', 'vermelha', 'azul', 'azul', 'vermelha',
          'vermelha', 'azul', 'vermelha', 'azul', 'azul']
 
-amarelo = []
-branca = []
-laranja = []
-azul = []
-verde = []
-vermelha = []
+def organizar_cores():
 
+    amarelo = []
+    branca = []
+    laranja = []
+    azul = []
+    verde = []
+    vermelha = []
 
-    if cor == 'amarelo':
-        amarelo.append(cor)
-    elif cor == 'branca':
-        branca.append(cor)
-    elif cor == 'laranja':
-        laranja.append(cor)
-    elif cor == 'azul':
-        azul.append(cor)
-    elif cor == 'verde':
-        verde.append(cor)
-    else:
-        vermelha.append(cor)
+    for cor in cores:
+        if cor == 'amarelo':
+            amarelo.append(cor)
+    return amarelo
 
-print(amarelo)
-print(branca)
-print(laranja)
-print(azul)
-
-print(verde)
-print(vermelha)
+print(organizar_cores())
