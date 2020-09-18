@@ -138,12 +138,21 @@ print()
 
 
 """
-Salário com Bônus
-    Faça um programa que leia :
-        - o nome de um vendedor, 
-        - o seu salário fixo 
-        - e o total de vendas efetuadas por ele no mês (em dinheiro). 
-    Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês, com duas casas decimais.
+Área do Círculo
+    A fórmula para calcular a área de uma circunferência é: area = π . raio2. Considerando para este problema que π = 3.14159:
+    Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por π.
 """
 
 print('EXERCÍCIO 6')
+
+
+def area_circulo():
+    raio = round(float(input('Raio: ')), 2)
+
+    area = round(raio * 3.14159 * 2, 4)
+
+    return area
+
+print(area_circulo())
+
+print()
