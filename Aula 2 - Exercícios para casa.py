@@ -89,6 +89,30 @@ else:
 
 print()
 
+print("Groger Bank, usando função")
+
+def cadastrar_cliente(nome_cliente, sobrenome_cliente, idade_cliente):
+    if idade >= 18:
+        cliente = {
+            'nome': nome_cliente,
+            'sobrenome': sobrenome_cliente,
+            'idade': idade_cliente
+        }
+        return cliente
+    return False
+
+def depositar(saldo_cliente, valor_deposito_cliente):
+    if valor_deposito_cliente >= 0:
+        return saldo_cliente + valor_deposito_cliente
+    return False
+
+def pegar_emprestimo(salario_cliente, valor_emprestimo_cliente, saldo_cliente)
+    if valor_emprestimo_cliente > (10 * salario_cliente)
+        return 'Não é possível'
+    saldo_final = saldo_cliente +valor_emprestimo_cliente
+    return 'Emprestimo realizado com sucesso'
+
+
 
 
 """
