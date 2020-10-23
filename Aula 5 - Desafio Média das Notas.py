@@ -18,41 +18,17 @@ Pergunta | Joao | Maria | Gabarito | Peso
 alunos = [
     {
         'nome': 'João',
-        'respostas': [
-            'C',
-            'A',
-            'D',
-            'B',
-            'D'
-        ]
+        'respostas': ['C', 'A', 'D', 'B', 'D']
     },
     {
        'nome': 'Maria',
-        'respostas': [
-            'C',
-            'D',
-            'D',
-            'D',
-            'D'
-        ]
+        'respostas': ['C', 'D', 'D', 'D', 'D']
     }
 ]
 
-gabarito = [
-    'A',
-    'A',
-    'B',
-    'A',
-    'A'
-]
+gabarito = ['A', 'A', 'B', 'A', 'A']
 
-peso = [
-    3,
-    2,
-    1,
-    1,
-    3
-]
+peso = [3, 2, 1, 1, 3]
 
 #FAZER DO JEITO MAIS FACIL POSSIVEL !!!!!!
 
