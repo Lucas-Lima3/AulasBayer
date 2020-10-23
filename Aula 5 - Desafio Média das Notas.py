@@ -56,7 +56,7 @@ peso = [
 
 #FAZER DO JEITO MAIS FACIL POSSIVEL !!!!!!
 
-def corrigir_prova(lista_alunos, gabarito, peso, posicao_aluno):
+def retornar_nota_prova(lista_alunos, gabarito, peso, posicao_aluno):
     aluno = lista_alunos[posicao_aluno]
     lista_respostas = aluno['respostas']
     nome_aluno = aluno['nome']
@@ -70,8 +70,8 @@ def corrigir_prova(lista_alunos, gabarito, peso, posicao_aluno):
         contador_peso = contador_peso + 1
     print(f'A nota do(a) aluno(a) {nome_aluno} foi {nota_aluno}')
 
-print(corrigir_prova(alunos, gabarito, peso, 0))
-print(corrigir_prova(alunos, gabarito, peso, 1))
+print(retornar_nota_prova(alunos, gabarito, peso, 0))
+print(retornar_nota_prova(alunos, gabarito, peso, 1))
 
 
 #Não sei porque aparece o NONE
