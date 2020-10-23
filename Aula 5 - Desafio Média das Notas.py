@@ -51,3 +51,27 @@ print(retornar_nota_prova(alunos, gabarito, peso, 1))
 
 
 #Não sei porque aparece o NONE
+
+
+"""
+Jeito Groger
+"""
+
+gabarito = ['A', 'A', 'B', 'A', 'A']
+
+peso = [3, 2, 1, 1, 3]
+
+alunos = {
+    'joao': ('C', 'D', 'A', 'B', 'D'),
+    'maria': ('A', 'B', 'A', 'A', 'D')
+}
+
+for nome in alunos:
+    aluno_respostas = alunos[nome]
+
+    ponto = 0
+    for item in range(len(gabarito)):
+        if gabarito[item] == aluno_respostas:
+            ponto += peso[item]
+
+    print(nome, ponto)
